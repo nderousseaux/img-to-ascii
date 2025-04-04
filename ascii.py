@@ -4,19 +4,19 @@ import sys
 import random
 
 # === Constantes pour la configuration ===
-IMAGE_PATH = "./base.png"          # Chemin vers l'image source
-OUTPUT_PATH = "./result.png"       # Chemin de sauvegarde de l'image ASCII
+IMAGE_PATH = "./in.png"          # Chemin vers l'image source
+OUTPUT_PATH = "./out.png"       # Chemin de sauvegarde de l'image ASCII
 ASCII_CHARS = " ·-+#"				    	 # Caractères à utiliser pour la conversion
 OUTPUT_WIDTH_CHARS = 40            # Largeur de l'image ASCII en caractères
 OUTPUT_WIDTH_SIZE = 2080					 # Largeur de l'image ASCII en pixels
 RELATIVE_SIZE_OF_ASCII_CHAR = 1.3    # Taille de l'ascii dans son pixel (1 = 100%)
 FONT = "./font.ttf"                # Chemin vers la police de caractères
 
-CONTRAST = 1.2			                 # Contraste
-LUMINOSITY = -0.1			               # Luminosité
-SHARPNESS = 10			               		# Netteté
-SHARPEN = True			               # Activer le filtre de netteté
-DETAIL = True			               # Activer le filtre de détails
+CONTRAST = 0			                 # Contraste
+LUMINOSITY = 0			               # Luminosité
+SHARPNESS = 0			               		# Netteté
+SHARPEN = 0			               # Activer le filtre de netteté
+DETAIL = 0			               # Activer le filtre de détails
 
 # === Chargement de l'image d'origine ===
 orig_image = Image.open(IMAGE_PATH)
